@@ -1,0 +1,76 @@
+.homepage-container {
+    background-color: #f0efef;
+    padding: 20px;
+    max-width: 1100px; /* Adjust max-width for better layout */
+    margin: 10px auto; /* Center the container */
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    /* max-width: 1100px; */
+    margin: auto;
+
+    text-align: center;
+    /* padding: 20px; */
+    /* font-family: Arial, sans-serif; */
+    
+}
+
+.homepage-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.button-group button {
+    background-color: #007bff;
+    font-family: sans-serif;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+    background-color: #0056b3;
+}
+
+.button-group button.active {
+    background-color: #28a745;
+}
+
+.player-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.player-list li {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.player-list li.sold {
+    background-color: #d4edda;
+}
+
+.player-list li.unsold {
+    background-color: #f8d7da;
+}

@@ -1,0 +1,199 @@
+/* AuctionDetailsPage.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2f3;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the entire auction details page */
+.auction-details-container {
+    background-color: #ffffff;
+    padding: 30px;
+    max-width: 900px; /* Adjust max-width for better layout */
+    margin: 20px auto; /* Center the container */
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Header Styling */
+h2 {
+    text-align: center;
+    color: #222;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: #555;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Error and Success Message Styling */
+.error {
+    color: #ff6b6b;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.success {
+    color: #28a745;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Form Section Styling */
+.form-section {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #f7f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Field Styling */
+input[type="text"],
+input[type="number"] {
+    width: calc(100%);
+    padding: 12px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+    color: #bbb;
+}
+
+/* General Button Styling */
+button {
+    padding: 8px 15px; /* Reduced padding for smaller buttons */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px; /* More pronounced curves */
+    cursor: pointer;
+    font-size: 0.85rem; /* Smaller font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(229, 230, 233, 0.2);
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.08);
+}
+
+/* Specific Button Styles */
+.edit-button {
+    padding: 6px 12px; /* Smaller padding for compact size */
+    background-color: #ffc107;
+    color: #333;
+    border-radius: 5px; /* Increased curve */
+    font-size: 0.8rem; /* Reduced font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-button:hover {
+    background-color: #f0b400;
+    transform: scale(1.1);
+}
+
+.delete-button {
+    padding: 6px 12px; /* Smaller padding for compact size */
+    background-color: #dc3545;
+    color: #fff;
+    border-radius: 5px; /* Increased curve */
+    font-size: 0.8rem; /* Reduced font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-button:hover {
+    background-color: #bd2130;
+    transform: scale(1.1);
+}
+
+/* Specific button for redirecting to the homepage */
+.homepage-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 20px; /* More pronounced curve */
+}
+
+.homepage-button:hover {
+    background-color: #1e7a3b;
+    transform: scale(1.05);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007bff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .auction-details-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    table th, table td {
+        font-size: 0.8rem;
+    }
+}

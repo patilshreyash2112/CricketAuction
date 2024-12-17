@@ -1,0 +1,165 @@
+body {
+    background-color: #f4f6f9; /* Light grey background */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Added font-family for consistency */
+}
+
+/* Card styling */
+.player-card {
+    background-color: #ffffff; /* White card background */
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+/* Container for all players */
+.players-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px; /* Space between cards */
+    padding: 20px; /* Padding for centering the grid */
+    justify-items: center;
+}
+
+/* Player image */
+.player-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Player Name */
+.player-card h3 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Player Info */
+.player-card p {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+/* Status (Sold/Unsold) */
+.player-card .status {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 8px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* Sold players - green color */
+.player-card.sold .status {
+    background-color: #27ae60;
+}
+
+/* Unsold players - red color */
+.player-card.unsold .status {
+    background-color: #e74c3c;
+}
+
+/* Hover effect for professionalism */
+.player-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .players-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    .player-card {
+        width: 180px;
+    }
+}
+
+/* Unsold Players Container */
+.unsold-players-container {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Sold Players Container */
+.sold-players-container {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Players Grid Styling for alignment */
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Add space between cards */
+    justify-items: center;
+    margin-top: 20px;
+}
+
+/* Styling Player Cards */
+.player-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 15px;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+/* Hover effect for Player Card */
+.player-card:hover {
+    transform: scale(1.05);
+}
+
+/* Card Content Padding */
+.card-content {
+    padding: 10px;
+}
+
+/* Player Image Styling */
+.player-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Player Name Styling */
+.player-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Player Info Styling */
+.player-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Unsold Player Status Styling */
+.player-card.unsold .status {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #e74c3c;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+}

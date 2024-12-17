@@ -1,0 +1,142 @@
+/* AuctionList.css */
+
+/* General Styling */
+body {
+    font-family: sans-serif;
+    background-color: #eef2f3;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Auction List Container */
+.auction-list-container {
+    background-color: #ffffff;
+    padding: 30px;
+    max-width: 700px; /* Adjust max-width for better layout */
+    margin: 20px auto; /* Center the container */
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Auction List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #EBEAFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Input Field Styling */
+input {
+    margin: 10px 0;
+    padding: 12px 15px;
+    width: calc(100% - 30px);
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f7f9fa;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    border-color: #007bff;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Variants */
+button:hover {
+    transform: scale(1.05);
+}
+
+.button3 {
+    background-color: #ffeb3b;
+    color: #000;
+    font-family: 'Arial', sans-serif;
+}
+
+.button3:hover {
+    background-color: #fdd835;
+}
+
+.button2 {
+    background-color: #f44336;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.button2:hover {
+    background-color: #d32f2f;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+/* Button Group */
+.button-groupp {
+    display: inline-flex;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+/* Error Styling */
+.error {
+    color: #e53935;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    display: block;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .auction-list-container {
+        padding: 20px;
+    }
+
+    li {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

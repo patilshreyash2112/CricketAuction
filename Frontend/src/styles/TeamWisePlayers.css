@@ -1,0 +1,30 @@
+.teamwise-players-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+h1 {
+    text-align: center;
+    color: #333;    
+}
+.team-heading {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    background-color: black;
+    
+}
+player-card.statuss {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    padding: 8px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 15px;
+    background-color: green;
+}
